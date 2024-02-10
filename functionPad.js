@@ -9,12 +9,12 @@ function pad(str, symb, num, statement) {
     for (let i = 0; i < num - strLength; i++) {
           result = symb + result;
     } 
-    return result;
+    console.log(result);
 } else {
     for (let i = 0; i < num - strLength; i++) {
           result = result + symb;
     } 
-    return result;
+    console.log(result);
 }
 }
-console.log(pad("example", "$", 9, true));
+pad("example", "$", 9, true);
